@@ -1,0 +1,28 @@
+---
+- hosts: all
+  gather_facts: true
+  become: yes
+  become_user: root
+
+  tasks:
+    - name: fetching pcap file from control node
+      fetch:
+        src: /home/trilift/Documents/PCAP/hoa8.pcap
+        dest: /home/trilift/ES/HOA8/
+        flat: yes
+
+- hosts: localhost
+  connection: local
+  gather_facts: false
+  tasks:
+    - name: extract executable from PCAP file
+      command: "tcpflow -r /home/trilift/ES/HOA8/hoa8.pcap -o /home/trilift/ES/HOA8/"
+      args:
+        creates: /home/trilift/ES/HOA8/executable.exe
+    - name: Debug .exe file
+      command: "cat /home/trilift/ES/HOA8/report.xml"
+      register: cat_output
+      changed_when: false
+
+    - debug:
+        var: cat_output.stdout_lines

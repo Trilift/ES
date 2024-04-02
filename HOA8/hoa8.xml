@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dfxml xmloutputversion='1.0'>
+  <metadata 
+  xmlns='http://afflib.org/tcpflow/' 
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+  xmlns:dc='http://purl.org/dc/elements/1.1/'>
+    <dc:type>Feature Extraction</dc:type>
+  </metadata>
+  <creator version='1.0'>
+    <program>TCPFLOW</program>
+    <version>1.6.1</version>
+    <build_environment>
+      <compiler>11.2.0 (11.2.0)</compiler>
+      <CPPFLAGS>-I/usr/local/include -Wdate-time -D_FORTIFY_SOURCE=2 -I/usr/local/include -DUTC_OFFSET=+0000</CPPFLAGS>
+      <CFLAGS>-g -g -O3 -ffile-prefix-map=/build/tcpflow-WmFafb/tcpflow-1.6.1=. -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -MD -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wwrite-strings -Wcast-align -Waggregate-return -Wbad-function-cast -Wcast-qual -Wundef -Wredundant-decls -Wdisabled-optimization -Wfloat-equal -Wmultichar -Wc++-compat -Wmissing-noreturn -Wall -Wstrict-prototypes -MD -D_FORTIFY_SOURCE=2 -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wwrite-strings -Wcast-align -Waggregate-return -Wbad-function-cast -Wcast-qual -Wundef -Wredundant-decls -Wdisabled-optimization -Wfloat-equal -Wmultichar -Wc++-compat -Wmissing-noreturn -Wall -Wstrict-prototypes</CFLAGS>
+      <CXXFLAGS>-g -g -O3 -ffile-prefix-map=/build/tcpflow-WmFafb/tcpflow-1.6.1=. -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -Wall -MD -D_FORTIFY_SOURCE=2 -Wpointer-arith -Wshadow -Wwrite-strings -Wcast-align -Wredundant-decls -Wdisabled-optimization -Wfloat-equal -Wmultichar -Wmissing-noreturn -Woverloaded-virtual -Wsign-promo -funit-at-a-time -Weffc++ -Wno-address-of-packed-member</CXXFLAGS>
+      <LDFLAGS>-L/usr/local/lib -Wl,-Bsymbolic-functions -flto=auto -Wl,-z,relro -L/usr/local/lib</LDFLAGS>
+      <LIBS>-lpcap -lcairo -lfontconfig -lfreetype -lpixman-1 -lexpat -lcrypto -lssl -lcrypto -ldl -lz </LIBS>
+      <compilation_date>2021-11-24T11:01:14</compilation_date>
+      <library name="boost" version="107400"/>
+    </build_environment>
+    <execution_environment>
+      <os_sysname>Linux</os_sysname>
+      <os_release>6.5.0-21-generic</os_release>
+      <os_version>#21~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Feb  9 13:32:52 UTC 2</os_version>
+      <host>ManageNode</host>
+      <arch>x86_64</arch>
+      <command_line>command line to be provided</command_line>
+      <uid>1000</uid>
+      <username>trilift</username>
+      <start_time>2024-03-14T10:33:52Z</start_time>
+    </execution_environment>
+  </creator>
+  <configuration>
+  </configuration>
+  <tdelta>0</tdelta>
+  <configuration>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//142.250.207.067.00080-010.000.002.015.58186</filename>
+      <filesize>6</filesize>
+      <tcpflow startime='2024-03-14T10:27:17.700229Z' endtime='2024-03-14T10:27:31.003753Z' mac_daddr='08:00:27:4e:7d:52' mac_saddr='52:54:00:12:35:02' family='2' src_ipn='142.250.207.67' dst_ipn='10.0.2.15' srcport='80' dstport='58186' packets='4' out_of_order_count='3' len='240' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//010.000.002.015.40144-103.233.039.044.00443</filename>
+      <filesize>24</filesize>
+      <tcpflow startime='2024-03-14T10:27:40.424285Z' endtime='2024-03-14T10:27:40.424301Z' mac_daddr='52:54:00:12:35:02' mac_saddr='08:00:27:4e:7d:52' family='2' src_ipn='10.0.2.15' dst_ipn='103.233.39.44' srcport='40144' dstport='443' packets='2' len='132' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//010.000.002.015.40130-103.233.039.044.00443</filename>
+      <filesize>24</filesize>
+      <tcpflow startime='2024-03-14T10:27:40.424393Z' endtime='2024-03-14T10:27:40.424405Z' mac_daddr='52:54:00:12:35:02' mac_saddr='08:00:27:4e:7d:52' family='2' src_ipn='10.0.2.15' dst_ipn='103.233.39.44' srcport='40130' dstport='443' packets='2' len='132' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//010.000.002.015.42706-216.058.203.078.00443</filename>
+      <filesize>102</filesize>
+      <tcpflow startime='2024-03-14T10:27:30.314617Z' endtime='2024-03-14T10:27:40.424486Z' mac_daddr='52:54:00:12:35:02' mac_saddr='08:00:27:4e:7d:52' family='2' src_ipn='10.0.2.15' dst_ipn='216.58.203.78' srcport='42706' dstport='443' packets='5' len='372' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//010.000.002.015.59706-172.217.145.201.00443</filename>
+      <filesize>24</filesize>
+      <tcpflow startime='2024-03-14T10:27:40.424806Z' endtime='2024-03-14T10:27:40.424820Z' mac_daddr='52:54:00:12:35:02' mac_saddr='08:00:27:4e:7d:52' family='2' src_ipn='10.0.2.15' dst_ipn='172.217.145.201' srcport='59706' dstport='443' packets='2' len='132' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//010.000.002.015.57724-142.250.204.046.00443</filename>
+      <filesize>63</filesize>
+      <tcpflow startime='2024-03-14T10:27:40.423221Z' endtime='2024-03-14T10:27:40.425033Z' mac_daddr='52:54:00:12:35:02' mac_saddr='08:00:27:4e:7d:52' family='2' src_ipn='10.0.2.15' dst_ipn='142.250.204.46' srcport='57724' dstport='443' packets='3' len='225' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//010.000.002.015.43256-034.120.208.123.00443</filename>
+      <filesize>1186</filesize>
+      <tcpflow startime='2024-03-14T10:27:29.314292Z' endtime='2024-03-14T10:27:40.425172Z' mac_daddr='52:54:00:12:35:02' mac_saddr='08:00:27:4e:7d:52' family='2' src_ipn='10.0.2.15' dst_ipn='34.120.208.123' srcport='43256' dstport='443' packets='7' len='1564' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//010.000.002.015.54316-103.233.038.205.00443</filename>
+      <filesize>24</filesize>
+      <tcpflow startime='2024-03-14T10:27:40.425260Z' endtime='2024-03-14T10:27:40.425271Z' mac_daddr='52:54:00:12:35:02' mac_saddr='08:00:27:4e:7d:52' family='2' src_ipn='10.0.2.15' dst_ipn='103.233.38.205' srcport='54316' dstport='443' packets='2' len='132' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//010.000.002.015.42738-034.117.237.239.00443</filename>
+      <filesize>1806</filesize>
+      <tcpflow startime='2024-03-14T10:27:29.317094Z' endtime='2024-03-14T10:27:40.425358Z' mac_daddr='52:54:00:12:35:02' mac_saddr='08:00:27:4e:7d:52' family='2' src_ipn='10.0.2.15' dst_ipn='34.117.237.239' srcport='42738' dstport='443' packets='15' len='2636' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//010.000.002.015.36840-202.138.161.012.00443</filename>
+      <filesize>24</filesize>
+      <tcpflow startime='2024-03-14T10:27:40.425429Z' endtime='2024-03-14T10:27:40.425439Z' mac_daddr='52:54:00:12:35:02' mac_saddr='08:00:27:4e:7d:52' family='2' src_ipn='10.0.2.15' dst_ipn='202.138.161.12' srcport='36840' dstport='443' packets='2' len='132' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//010.000.002.015.35702-142.251.220.066.00443</filename>
+      <filesize>102</filesize>
+      <tcpflow startime='2024-03-14T10:27:30.314482Z' endtime='2024-03-14T10:27:40.425791Z' mac_daddr='52:54:00:12:35:02' mac_saddr='08:00:27:4e:7d:52' family='2' src_ipn='10.0.2.15' dst_ipn='142.251.220.66' srcport='35702' dstport='443' packets='5' len='372' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//010.000.002.015.52078-074.125.164.073.00443</filename>
+      <filesize>24</filesize>
+      <tcpflow startime='2024-03-14T10:27:40.425867Z' endtime='2024-03-14T10:27:40.425878Z' mac_daddr='52:54:00:12:35:02' mac_saddr='08:00:27:4e:7d:52' family='2' src_ipn='10.0.2.15' dst_ipn='74.125.164.73' srcport='52078' dstport='443' packets='2' len='132' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//103.233.039.044.00443-010.000.002.015.40130</filename>
+      <filesize>6</filesize>
+      <tcpflow startime='2024-03-14T10:27:21.532841Z' endtime='2024-03-14T10:27:40.429128Z' mac_daddr='08:00:27:4e:7d:52' mac_saddr='52:54:00:12:35:02' family='2' src_ipn='103.233.39.44' dst_ipn='10.0.2.15' srcport='443' dstport='40130' packets='5' out_of_order_count='4' len='300' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//202.138.161.012.00443-010.000.002.015.36840</filename>
+      <filesize>6</filesize>
+      <tcpflow startime='2024-03-14T10:27:13.854417Z' endtime='2024-03-14T10:27:40.429615Z' mac_daddr='08:00:27:4e:7d:52' mac_saddr='52:54:00:12:35:02' family='2' src_ipn='202.138.161.12' dst_ipn='10.0.2.15' srcport='443' dstport='36840' packets='6' out_of_order_count='5' len='360' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//103.233.039.044.00443-010.000.002.015.40144</filename>
+      <filesize>6</filesize>
+      <tcpflow startime='2024-03-14T10:27:21.532840Z' endtime='2024-03-14T10:27:40.429615Z' mac_daddr='08:00:27:4e:7d:52' mac_saddr='52:54:00:12:35:02' family='2' src_ipn='103.233.39.44' dst_ipn='10.0.2.15' srcport='443' dstport='40144' packets='5' out_of_order_count='4' len='300' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//103.233.038.205.00443-010.000.002.015.54316</filename>
+      <filesize>6</filesize>
+      <tcpflow startime='2024-03-14T10:27:23.064804Z' endtime='2024-03-14T10:27:40.430025Z' mac_daddr='08:00:27:4e:7d:52' mac_saddr='52:54:00:12:35:02' family='2' src_ipn='103.233.38.205' dst_ipn='10.0.2.15' srcport='443' dstport='54316' packets='5' out_of_order_count='4' len='300' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//172.217.145.201.00443-010.000.002.015.59706</filename>
+      <filesize>6</filesize>
+      <tcpflow startime='2024-03-14T10:27:14.108788Z' endtime='2024-03-14T10:27:40.430413Z' mac_daddr='08:00:27:4e:7d:52' mac_saddr='52:54:00:12:35:02' family='2' src_ipn='172.217.145.201' dst_ipn='10.0.2.15' srcport='443' dstport='59706' packets='6' out_of_order_count='5' len='360' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//010.000.002.015.55296-034.107.243.093.00443</filename>
+      <filesize>80</filesize>
+      <tcpflow startime='2024-03-14T10:27:29.804660Z' endtime='2024-03-14T10:27:40.432032Z' mac_daddr='52:54:00:12:35:02' mac_saddr='08:00:27:4e:7d:52' family='2' src_ipn='10.0.2.15' dst_ipn='34.107.243.93' srcport='55296' dstport='443' packets='4' len='296' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//034.117.237.239.00443-010.000.002.015.42738</filename>
+      <filesize>5336</filesize>
+      <tcpflow startime='2024-03-14T10:27:29.322464Z' endtime='2024-03-14T10:27:40.433184Z' mac_daddr='08:00:27:4e:7d:52' mac_saddr='52:54:00:12:35:02' family='2' src_ipn='34.117.237.239' dst_ipn='10.0.2.15' srcport='443' dstport='42738' packets='16' out_of_order_count='10' violations='1' len='6260' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//034.120.208.123.00443-010.000.002.015.43256</filename>
+      <filesize>45</filesize>
+      <tcpflow startime='2024-03-14T10:27:29.314709Z' endtime='2024-03-14T10:27:40.433185Z' mac_daddr='08:00:27:4e:7d:52' mac_saddr='52:54:00:12:35:02' family='2' src_ipn='34.120.208.123' dst_ipn='10.0.2.15' srcport='443' dstport='43256' packets='8' out_of_order_count='6' len='513' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//034.107.243.093.00443-010.000.002.015.55296</filename>
+      <filesize>30</filesize>
+      <tcpflow startime='2024-03-14T10:27:29.804463Z' endtime='2024-03-14T10:27:40.445370Z' mac_daddr='08:00:27:4e:7d:52' mac_saddr='52:54:00:12:35:02' family='2' src_ipn='34.107.243.93' dst_ipn='10.0.2.15' srcport='443' dstport='55296' packets='6' out_of_order_count='4' len='378' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//142.250.204.046.00443-010.000.002.015.57724</filename>
+      <filesize>6</filesize>
+      <tcpflow startime='2024-03-14T10:27:40.423451Z' endtime='2024-03-14T10:27:40.452978Z' mac_daddr='08:00:27:4e:7d:52' mac_saddr='52:54:00:12:35:02' family='2' src_ipn='142.250.204.46' dst_ipn='10.0.2.15' srcport='443' dstport='57724' packets='4' out_of_order_count='3' len='240' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//142.251.220.066.00443-010.000.002.015.35702</filename>
+      <filesize>45</filesize>
+      <tcpflow startime='2024-03-14T10:27:30.314931Z' endtime='2024-03-14T10:27:40.454178Z' mac_daddr='08:00:27:4e:7d:52' mac_saddr='52:54:00:12:35:02' family='2' src_ipn='142.251.220.66' dst_ipn='10.0.2.15' srcport='443' dstport='35702' packets='6' out_of_order_count='4' len='393' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//142.250.207.067.00080-010.000.002.015.47710</filename>
+      <filesize>6</filesize>
+      <tcpflow startime='2024-03-14T10:27:14.104817Z' endtime='2024-03-14T10:27:40.454953Z' mac_daddr='08:00:27:4e:7d:52' mac_saddr='52:54:00:12:35:02' family='2' src_ipn='142.250.207.67' dst_ipn='10.0.2.15' srcport='80' dstport='47710' packets='5' out_of_order_count='4' len='300' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//074.125.164.073.00443-010.000.002.015.52078</filename>
+      <filesize>6</filesize>
+      <tcpflow startime='2024-03-14T10:27:14.617011Z' endtime='2024-03-14T10:27:40.456315Z' mac_daddr='08:00:27:4e:7d:52' mac_saddr='52:54:00:12:35:02' family='2' src_ipn='74.125.164.73' dst_ipn='10.0.2.15' srcport='443' dstport='52078' packets='6' out_of_order_count='5' len='360' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//216.058.203.078.00443-010.000.002.015.42706</filename>
+      <filesize>45</filesize>
+      <tcpflow startime='2024-03-14T10:27:30.314932Z' endtime='2024-03-14T10:27:40.471465Z' mac_daddr='08:00:27:4e:7d:52' mac_saddr='52:54:00:12:35:02' family='2' src_ipn='216.58.203.78' dst_ipn='10.0.2.15' srcport='443' dstport='42706' packets='6' out_of_order_count='4' len='393' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//010.000.002.015.38956-034.120.208.123.00443</filename>
+      <filesize>4030</filesize>
+      <tcpflow startime='2024-03-14T10:27:40.595235Z' endtime='2024-03-14T10:27:40.843537Z' mac_daddr='52:54:00:12:35:02' mac_saddr='08:00:27:4e:7d:52' family='2' src_ipn='10.0.2.15' dst_ipn='34.120.208.123' srcport='38956' dstport='443' packets='16' len='4914' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//034.120.208.123.00443-010.000.002.015.38956</filename>
+      <filesize>4644</filesize>
+      <tcpflow startime='2024-03-14T10:27:40.599945Z' endtime='2024-03-14T10:27:40.847256Z' mac_daddr='08:00:27:4e:7d:52' mac_saddr='52:54:00:12:35:02' family='2' src_ipn='34.120.208.123' dst_ipn='10.0.2.15' srcport='443' dstport='38956' packets='19' out_of_order_count='13' violations='1' len='5748' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//010.000.002.015.38962-034.120.208.123.00443</filename>
+      <filesize>28317</filesize>
+      <tcpflow startime='2024-03-14T10:27:40.862263Z' endtime='2024-03-14T10:27:41.341879Z' mac_daddr='52:54:00:12:35:02' mac_saddr='08:00:27:4e:7d:52' family='2' src_ipn='10.0.2.15' dst_ipn='34.120.208.123' srcport='38962' dstport='443' packets='20' len='29417' />
+    </fileobject>
+    <fileobject>
+      <filename>/home/trilift/ES/HOA8//034.120.208.123.00443-010.000.002.015.38962</filename>
+      <filesize>4678</filesize>
+      <tcpflow startime='2024-03-14T10:27:40.894846Z' endtime='2024-03-14T10:27:41.373526Z' mac_daddr='08:00:27:4e:7d:52' mac_saddr='52:54:00:12:35:02' family='2' src_ipn='34.120.208.123' dst_ipn='10.0.2.15' srcport='443' dstport='38962' packets='35' out_of_order_count='30' violations='1' len='6748' />
+    </fileobject>
+  </configuration>
+  <summary />
+  <open_fds_at_end>0</open_fds_at_end>
+  <max_open_flows>20</max_open_flows>
+  <total_flows>30</total_flows>
+  <flow_map_size>0</flow_map_size>
+  <total_packets>229</total_packets>
+  <rusage>
+    <utime>0.007367</utime>
+    <stime>0.011051</stime>
+    <maxrss>16240</maxrss>
+    <minflt>1529</minflt>
+    <majflt>2</majflt>
+    <nswap>0</nswap>
+    <inblock>0</inblock>
+    <oublock>344</oublock>
+    <clocktime>0.004239</clocktime>
+  </rusage>
+</dfxml>

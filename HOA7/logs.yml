@@ -1,0 +1,13 @@
+---
+- hosts: all
+  gather_facts: true
+  become: yes
+  become_user: root
+
+
+  tasks:
+     -  name: Logs collection
+        fetch:
+          src: /var/log/syslog
+          dest: ~/HOA/HOA7/nodelogs
+          flat: yes
