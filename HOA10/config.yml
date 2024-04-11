@@ -1,56 +1,51 @@
-
+---
 - hosts: routers
-  become: true
-  gather_facts: no
-  tasks: 
-  
-    - name: Apply the provided configuration
-      cisco.ios.ios_hostname:
-        config:
-          hostname: Router1
-        state: merged
+  connection: network_cli
+  tasks:
 
-    - name: configuring login banner
-      cisco.ios.ios_banner:
-        banner: motd
-        text: |
-          Unauthorized Personels are Prohibited!
-        state: present
-   
-    - name: configuring domain name
-      cisco.ios.ios_system:
-        domain_name: netacad.com
-        state: present
-
-    - name: configuring line con 0
-      cisco.ios.ios_config:
+    - name: hostname
+      ios_config:
         lines:
-        - password cisco
-        - login
-        - logging synchronous 
-        parents: line console 0
+          - hostname R1
+      become: yes
+      become_method: enable
 
-    - name: configuring privilege exec mode password 
-      cisco.ios.ios_config:
-        lines: enable secret class
+    - name: banner motd
+      ios_banner:
+        banner: motd
+        text: "Do not access if not Authorized Personel"
+      become: yes
+      become_method: enable
 
-    - name: saving running config to startup config
-      cisco.ios.ios_config:
-        save_when: modified
+    - name: service password-encryption
+      ios_config:
+        lines:
+          - service password-encryption
+      become: yes
+      become_method: enable
 
-    - block:
+    - name: line vty/con 0 password cisco
+      ios_config:
+        lines:
+          - password cisco
+          - login
+        parents:
+          - line vty 0 15
+          - line console 0
+      become: yes
+      become_method: enable
 
-      - name: checking hostname
-        cisco.ios.ios_command:
-          commands: show run 
-        register: output_run
+    - name: en fa0/0
+      ios_interfaces:
+        config:
+          - name: FastEthernet0/0
+            description: Configured by Ansible Network
+            enabled: True
+      become: yes
+      become_method: enable
 
-      - debug: 
-          msg="{{ output_run }}"
-
-# configuring ip address
-- hosts: routers[0]
-  become: true
-  gather_facts: no
-  roles:
-     - role: c7200
+    - name: save config
+      ios_config:
+        backup: true
+      become: yes
+      become_method: enable
